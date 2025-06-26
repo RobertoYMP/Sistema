@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: backend
+    env: docker
+    repo: https://github.com/RobertoYMP/Sistema
+    dockerContext: ./backend
+    dockerfilePath: Dockerfile
+    envVars:
+      - fromDotEnv: true
+    plan: free
+
+  - type: web
+    name: frontend
+    env: docker
+    repo: https://github.com/RobertoYMP/Sistema
+    dockerContext: ./frontend
+    dockerfilePath: Dockerfile
+    plan: free
