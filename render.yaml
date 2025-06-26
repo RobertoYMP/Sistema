@@ -5,8 +5,6 @@ services:
     repo: https://github.com/RobertoYMP/Sistema
     dockerContext: ./backend
     dockerfilePath: Dockerfile
-    envVars:
-      - fromDotEnv: true
     plan: free
 
   - type: web
